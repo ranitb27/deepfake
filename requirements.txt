@@ -2,4 +2,4 @@ streamlit
 scipy
 scikit-learn
 tensorflow
-opencv-python
+opencv-python-headless

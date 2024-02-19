@@ -53,7 +53,8 @@ def classify_image(image_path_or_url):
         print("Error:", e)
         return None
      
-model = pickle.load(open('model.pkl', 'rb')) 
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
 st.title("DEEP_FAKE_DETECT") 
 image_path = st.text_input("Paste an URL...") 
 submitted = st.button("Submit") 
